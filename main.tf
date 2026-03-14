@@ -11,8 +11,8 @@ provider "aws" {
   region = var.region
 }
 
-module "s3-webapp-custom-mour" {
-  source  = "app.terraform.io/learn-terraform-mk/s3-webapp-custom-mour/aws"
+module "s3-webapp" {
+  source  = "app.terraform.io/learn-terraform-mk/s3-webapp/aws"
   name   = var.name
   region = var.region
   prefix = var.prefix
