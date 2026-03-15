@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 module "s3-webapp" {
-  source  = "git::https://github.com/my-org/terraform-s3-webapp.git?ref=v1.0.0"
+  source  = "git::https://github.com/mourkeita/terraform-s3-webapp.git?ref=v1.0.0"
   name   = var.name
   region = var.region
   prefix = var.prefix
